@@ -1,0 +1,386 @@
+@charset "UTF-8";
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+/* 
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ */
+/*
+*
+* Lemonade v1.1
+* Copyright 2013, Joe Richardson
+* lemonade.im
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*
+*/
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box
+}
+
+/* Set the width of the grid */
+.frame {
+  width: 100%;
+  margin: 0 auto
+}
+
+/* Attribute selector */
+[class*='bit-'] {
+  float: left;
+  padding: 0.3em
+}
+
+/* Floats last ".bit-" to the right */
+[class*='bit-']:last-of-type {
+  float: right
+}
+
+/* Clearfix */
+.frame:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+/* Main Widths */
+.bit-1  { width: 100% }
+.bit-2  { width: 50% }
+.bit-3  { width: 33.33% }
+.bit-4  { width: 25% }
+.bit-5  { width: 20% }
+.bit-6  { width: 16.6666666667% }
+.bit-7  { width: 14.2857142857% }
+.bit-8  { width: 12.5% }
+.bit-9  { width: 11.1111111111% }
+.bit-10 { width: 10% }
+.bit-11 { width: 9.09090909091% }
+.bit-12 { width: 8.33% }
+.h-10 { height: 10% }
+.h-20 { height: 20% }
+.h-30 { height: 30% }
+.h-40 { height: 40% }
+.h-50 { height: 50% }
+.h-60 { height: 60% }
+.h-70 { height: 70% }
+.h-80 { height: 80% }
+.h-90 { height: 90% }
+.h-100 { height: 100% }
+
+@font-face {
+  font-family: "ficons";
+  src: url("/assets/fonts/foundation-icons.eot");
+  src: url("/assets/fonts/foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("/assets/fonts/foundation-icons.woff") format("woff"),
+       url("/assets/fonts/foundation-icons.ttf") format("truetype"),
+       url("/assets/fonts/foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaB';
+  src: url('/assets/fonts/MontserratAlternates-Bold.eot');
+  src: url('/assets/fonts/MontserratAlternates-Bold.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/MontserratAlternates-Bold.woff') format('woff'),
+       url('/assets/fonts/MontserratAlternates-Bold.ttf') format('truetype'),
+       url('/assets/fonts/MontserratAlternates-Bold.svg#MontserratAlternates-Bold') format('svg');
+}
+@font-face {
+  font-family: 'MaR';
+  src: url('/assets/fonts/MontserratAlternates-Regular.eot');
+  src: url('/assets/fonts/MontserratAlternates-Regular.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/MontserratAlternates-Regular.woff') format('woff'),
+       url('/assets/fonts/MontserratAlternates-Regular.ttf') format('truetype'),
+       url('/assets/fonts/MontserratAlternates-Regular.svg#MontserratAlternates-Regular') format('svg');
+}
+html, body {
+	height:100%;
+  color: #eee;
+  text-shadow: 0px 0px 2px #333;
+
+}
+body {
+  background: #333 url(/assets/img/home.png) repeat left top;
+}
+a {
+  color: inherit;
+}
+h1 {
+	font-size: 5em;
+  font-family: 'MaB', sans-serif;
+  padding: 0 0 0.2em 0;
+}
+h2 {
+	/*font-size: 2em;*/
+font-family: 'MaR', sans-serif;
+color: #aaa;
+}
+h1, h2 {
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+       -moz-animation: fadein 2s; /* Firefox */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+#home {
+  background: transparent url(/assets/img/NoiFruj7.png) no-repeat center 90%;
+  
+}
+.what, .how {
+  font-family: 'MaB', sans-serif;
+  color: #eee;
+}
+#home .head {
+  text-align: center;
+  background: transparent url(/assets/img/Logo.png) no-repeat center center;
+  display: table;
+}
+#home .cont {
+  display: table-cell;
+  vertical-align: middle;
+}
+#menu a {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: table;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 0px 0px 2px #000;
+}
+#menu i {
+   display: table-cell;
+  vertical-align: middle;
+}
+#menu {
+  padding: 0;
+}
+#menu ul {
+  height: 100%;
+  overflow: hidden;
+  clear: both;
+}
+#menu li {
+  
+ padding: 0;
+height: 100%;
+
+}
+.lkdn {
+  background-color: #1883BB;
+}
+.gpls {
+  background-color: #DC4B39;
+}
+.twtr {
+  background-color: #00ACEE;
+}
+.fi-social-google-plus:before,
+.fi-social-linkedin:before,
+.fi-social-twitter:before {
+  font-family: "ficons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+.fi-social-google-plus:before { content: "\f1ca"; }
+.fi-social-linkedin:before { content: "\f1d0"; }
+.fi-social-twitter:before { content: "\f1e4"; }
+
+
+.rotating {
+  display: inline-block;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -moz-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -ms-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -o-transform: rotateX(0) rotateY(0) rotateZ(0);
+  transform: rotateX(0) rotateY(0) rotateZ(0);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin-x: 50%;
+}
+
+.rotating.flip {
+  position: relative;
+}
+
+.rotating .front, .rotating .back {
+  left: 0;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.rotating .front {
+  position: absolute;
+  display: inline-block;
+  -webkit-transform: translate3d(0,0,1px);
+  -moz-transform: translate3d(0,0,1px);
+  -ms-transform: translate3d(0,0,1px);
+  -o-transform: translate3d(0,0,1px);
+  transform: translate3d(0,0,1px);
+}
+
+.rotating.flip .front {
+  z-index: 1;
+}
+
+.rotating .back {
+  display: block;
+  opacity: 0;
+}
+
+.rotating.spin {
+  -webkit-transform: rotate(360deg) scale(0);
+  -moz-transform: rotate(360deg) scale(0);
+  -ms-transform: rotate(360deg) scale(0);
+  -o-transform: rotate(360deg) scale(0);
+  transform: rotate(360deg) scale(0);
+}
+
+
+
+.rotating.flip .back {
+  z-index: 2;
+  display: block;
+  opacity: 1;
+  
+  -webkit-transform: rotateY(180deg) translate3d(0,0,0);
+  -moz-transform: rotateY(180deg) translate3d(0,0,0);
+  -ms-transform: rotateY(180deg) translate3d(0,0,0);
+  -o-transform: rotateY(180deg) translate3d(0,0,0);
+  transform: rotateY(180deg) translate3d(0,0,0);
+}
+
+.rotating.flip.up .back {
+  -webkit-transform: rotateX(180deg) translate3d(0,0,0);
+  -moz-transform: rotateX(180deg) translate3d(0,0,0);
+  -ms-transform: rotateX(180deg) translate3d(0,0,0);
+  -o-transform: rotateX(180deg) translate3d(0,0,0);
+  transform: rotateX(180deg) translate3d(0,0,0);
+}
+
+.rotating.flip.cube .front {
+  -webkit-transform: translate3d(0,0,100px) scale(0.9,0.9);
+  -moz-transform: translate3d(0,0,100px) scale(0.85,0.85);
+  -ms-transform: translate3d(0,0,100px) scale(0.85,0.85);
+  -o-transform: translate3d(0,0,100px) scale(0.85,0.85);
+  transform: translate3d(0,0,100px) scale(0.85,0.85);
+}
+
+.rotating.flip.cube .back {
+  -webkit-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.9,0.9);
+  -moz-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  -ms-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  -o-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+}
+
+.rotating.flip.cube.up .back {
+  -webkit-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.9,0.9);
+  -moz-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  -ms-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  -o-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+}
+
+
+@media only screen and (max-width: 515px), only screen and (max-device-width: 515px) {
+  #home .head {
+    background-size: 500px auto;
+  }
+}
+
+@media only screen and (max-width: 430px), only screen and (max-device-width: 430px) {
+  #home .head {
+    background-size: 400px auto;
+  }
+}
+@media only screen and (max-width: 348px), only screen and (max-device-width: 348px) {
+  #home .head {
+    background-size: 280px auto;
+  }
+}
+@media only screen and (max-width: 300px), only screen and (max-device-width: 300px) {
+  #home {
+    background-size: 280px auto;
+  }
+}
+
+@media only screen and (max-height: 475px), only screen and (max-device-height: 475px) {
+  #home .head {
+    background-size: 350px auto;
+  }
+}
+@media only screen and (max-height: 345px), only screen and (max-device-height: 345px) {
+  #home .head {
+    background-size: 300px auto;
+  }
+}
+@media only screen and (max-height: 600px), only screen and (max-device-height: 600px) {
+  #menu a {
+    font-size: 2.7em;
+  }
+}
+@media only screen and (max-height: 400px), only screen and (max-device-height: 400px) {
+  #menu a {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-height: 290px), only screen and (max-device-height: 290px) {
+  #menu a {
+    font-size: 1.3em;
+  }
+}

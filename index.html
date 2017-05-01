@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="" itemscope itemtype="http://schema.org/ProfilePage"> <!--<![endif]-->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta property="og:title" content="Alejandro Rodríguez" />
+		<meta property="og:locale:alternate" content="en_US" />
+		<meta property="og:type" content="profile" />
+		<meta property="og:profile:first_name" content="Alejandro" />
+		<meta property="og:profile:last_name" content="Rodríguez Clemente" />
+		<meta property="og:profile:username" content="arcxyz" />
+		<meta property="og:profile:gender" content="male" />
+		<meta property="og:url" content="http://arcx.es" />
+		<meta property="og:image" content="http://arcx.es/assets/img/SLogo.png" />
+		<meta itemprop="name" content="Alejandro Rodríguez" />
+		<meta itemprop="description" content="Hello, my name is Alejandro. I am a system administrator and web developer from Zamora, Spain" />
+		<meta itemprop="image" content="http://arcx.es/assets/img/SLogo.png" />
+		<meta name="description" content="Hello, my name is Alejandro. I am a system administrator and web developer from Zamora, Spain">
+		<meta name="author" content="Alejandro Rodríguez Clemente">
+		<meta name="keywords" content="Web Designer, System Administrator, Linux System Administrator, Web Developer, Zamora, Castilla y León, Spain, España">
+		<title>Alejandro Rodríguez</title>
+		<link rel="shortcut icon" sizes="196x196" href="/assets/img/icon.png">
+		<link rel="stylesheet" href="/assets/css/style.min.css">
+	</head>
+	<body>
+		<header id="home" class="h-100">
+			<div class="bit-1 h-90 head" id="bglogo">
+				<div class="cont">
+					<h1 data-name="Alejandro Rodríguez Clemente">Alejandro Rodríguez</h1>
+					<h2>I am a <span class="how">young,modern,great,motivated</span><br /><span class="what">#SysAdmin, #Developer, #WebDesigner</span> from<br />Zamora, Spain</h2>
+				</div>
+			</div>
+			<nav class="bit-1 h-10" id="menu">
+				<ul>
+					<li class="bit-3 lkdn">
+						<a href="http://es.linkedin.com/in/alejandrorodriguezclemente/">
+							<i class="fi-social-linkedin"></i>
+						</a>
+					</li>
+					<li class="bit-3 gpls">
+						<a href="https://plus.google.com/+AlejandroRodriguezClemente" rel="author">
+							<i class="fi-social-google-plus"></i>
+						</a>
+					</li>
+					<li class="bit-3 twtr">
+						<a href="https://twitter.com/arcxyz">
+							<i class="fi-social-twitter"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Piwik -->
+		<script type="text/javascript">
+			var _paq = _paq || [];
+			_paq.push(["trackPageView"]);
+			_paq.push(["enableLinkTracking"]);
+
+			(function() {
+				var u=(("https:" == document.location.protocol) ? "https" : "http") + "://sight.arcx.es/";
+				_paq.push(["setTrackerUrl", u+"piwik.php"]);
+				_paq.push(["setSiteId", "2"]);
+				var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+				g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+		<!-- End Piwik Code -->
+		<!-- Piwik Image Tracker -->
+		<noscript>
+			<img src="http://sight.arcx.es/piwik.php?idsite=2&amp;rec=1" style="border:0" alt="" />
+		</noscript>
+		<!-- End Piwik -->
+		<script type="text/javascript" src="/assets/js/libs.min.js"></script>		
+		<script type="text/javascript">
+			(function ($) {
+				"use strict";
+
+				// Detecting IE
+				var oldIE;
+				if ($('html').is('.ie6, .ie7, .ie8, .ie9')) {
+					oldIE = true;
+				}
+				if (oldIE) {
+					$(document).ready(function() {
+						$("h1").fitText(1.9, { maxFontSize: '75px', minFontSize: '50px' });
+						$("h2").fitText(1.9, { maxFontSize: '35px' });
+						$('.what').textrotator({separator: ",",speed: 4000});
+						$('.how').textrotator({separator: ",",	speed: 2000});
+					});
+				} else {
+					$(document).ready(function() {
+						$("h1").fitText(1.9, { maxFontSize: '75px', minFontSize: '50px' });
+						$("h2").fitText(1.9, { maxFontSize: '35px' });
+						$('.what').textrotator({animation: "flipUp", separator: ",",speed: 4000});
+						$('.how').textrotator({animation: "flipUp", separator: ",",	speed: 2000});
+					});
+				}
+			}(jQuery));			
+		</script>
+	</body>
+</html>
